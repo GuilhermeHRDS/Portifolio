@@ -4,20 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Título exibido na aba do navegador -->
     <title>Sobre — Guilherme Henrique</title>
+
+    <!-- Link para o arquivo de estilos (style.css) -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- HEADER FIXO: presente em todas as páginas para navegação consistente -->
     <header class="site-header">
         <div class="container header-inner">
 
             <!-- FOTO NO HEADER (única mudança) -->
             <div class="logo-area">
+                <!-- Imagem do perfil (colocar a imagem na pasta /imagem/) -->
                 <img src="imagem/Guilherme.jpeg" class="avatar-mini">
                 <span class="logo-text">Guilherme Henrique Rodrigues da Silva</span>
             </div>
 
+            <!-- MENU DE NAVEGAÇÃO: links entre as páginas -->
             <nav class="nav">
                 <a href="sobre.html" class="active">Sobre</a>
                 <a href="formacao.html">Formação</a>
@@ -25,14 +32,17 @@
                 <a href="contato.html">Contato</a>
             </nav>
 
+            <!-- CONTROLES: botão para alternar tema (script.js controla a lógica) -->
             <div class="controls">
                 <button id="theme-toggle" class="btn-ghost">Tema</button>
-
             </div>
         </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="container">
+
+        <!-- Seção de apresentação -->
         <section class="hero">
 
             <div class="hero-card">
@@ -69,7 +79,7 @@
                     apoiem a tomada de decisão e aumentem a eficiência dos processos por meio da automação.
                     Sou movido por desafios, inovação e aprendizado contínuo.
                 </p>
-
+                <!-- Lista com informações -->
                 <ul class="info-list">
                     <li><strong>Local:</strong> Catanduva, SP (natural de Vargem Grande do Sul — SP)</li>
                     <li><strong>Trajetória:</strong> Abengoa Bioenergia, Bunge, Raízen, BP Bunge Bioenergia, Cerradinho
@@ -78,7 +88,7 @@
                     <li><strong>Hobbies:</strong> Bike, Beach Tennis, Rafting</li>
                     <li><strong>LinkedIn:</strong>
                         <a href="https://www.linkedin.com/in/guilherme-henrique-rodrigues-da-silva-934833b6/"
-                            target="_blank">Perfil profissional</a>
+                            target="_blank" rel="noopener noreferrer">Perfil profissional</a>
                     </li>
                 </ul>
 
@@ -86,7 +96,7 @@
 
         </section>
 
-
+        <!-- Resumo profissional -->
         <section class="card">
             <h2>Resumo profissional</h2>
             <p>
@@ -95,22 +105,23 @@
                 Atuação estratégica na criação de soluções data-driven utilizando Power BI, Power Apps e Power Automate,
                 promovendo insights, eficiência operacional e transformação digital. Experiência e interesse em soluções
                 com Inteligência Artificial, incluindo Copilot M365, Copilot Studio e agentes de IA para automação
-                inteligente e suporte à tomada de decisão..
+                inteligente e suporte à tomada de decisão.
             </p>
             <br>
             <p>
                 Coordenei e desenvolvi projetos de automação de ativos, CAPEX, portal de equipamentos e gestão de planos
-                de ação,
-                sempre focando em eficiência, fluxo digital e melhoria contínua.
+                de ação, sempre focando em eficiência, fluxo digital e melhoria contínua.
             </p>
         </section>
 
     </main>
 
+    <!-- RODAPÉ -->
     <footer class="site-footer">
         <p>© 2025 Guilherme Henrique — Portfólio</p>
     </footer>
 
+    <!-- SCRIPT: controla tema e validação do formulário -->
     <script src="script.js"></script>
 </body>
 

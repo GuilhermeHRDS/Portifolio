@@ -4,31 +4,48 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Título que aparece na aba do navegador -->
     <title>Formação — Guilherme Henrique</title>
+
+    <!-- Importa o arquivo de estilos principal -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Cabeçalho fixo com foto, nome e menu de navegação -->
     <header class="site-header">
         <div class="container header-inner">
+
+            <!-- Área com avatar e nome do usuário -->
             <div class="logo-area">
                 <img src="imagem/Guilherme.jpeg" class="avatar-mini">
                 <span class="logo-text">Guilherme Henrique Rodrigues da Silva</span>
             </div>
 
+            <!-- Menu principal; link "Formação" marcado como ativo -->
+            <nav class="nav">
+                <a href="sobre.html">Sobre</a>
+                <a href="formacao.html" class="active">Formação</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="contato.html">Contato</a>
+            </nav>
 
-            <nav class="nav"><a href="sobre.html">Sobre</a><a href="formacao.html" class="active">Formação</a><a
-                    href="portfolio.html">Portfólio</a><a href="contato.html">Contato</a></nav>
-            <div class="controls"><button id="theme-toggle" class="btn-ghost">Tema</button>
+            <!-- Botão que alterna entre tema claro e escuro -->
+            <div class="controls">
+                <button id="theme-toggle" class="btn-ghost">Tema</button>
             </div>
         </div>
     </header>
 
+    <!-- Conteúdo principal da página -->
     <main class="container">
+
         <section class="card">
             <h2>Formação</h2>
 
-            <!-- GRADUAÇÃO PRIMEIRO -->
+            <!-- Bloco de graduação principal -->
             <p><strong>UNINTER – Centro Universitário Internacional</strong><br>
                 Bacharelado em Ciência de Dados — 2025 a 2027 (em andamento)</p>
 
@@ -40,7 +57,7 @@
 
             <hr style="margin: 20px 0; border: none; border-top: 1px solid #e0e0e0;">
 
-            <!-- TÉCNICO DEPOIS -->
+            <!-- Formação técnica de nível médio -->
             <p><strong>ETEC – Escola Técnica Estadual de São Paulo</strong><br>
                 Técnico em Informática — 2012 a 2013</p>
 
@@ -52,12 +69,13 @@
 
             <hr style="margin: 20px 0; border: none; border-top: 1px solid #e0e0e0;">
 
+            <!-- Lista de habilidades e conhecimentos -->
             <h3>Competências</h3>
             <ul class="info-list">
                 <li>Power BI (DAX, modelagem de dados, KPIs, DirectQuery, Import)</li>
                 <li>Power Automate (fluxos automatizados, integração com Teams e SharePoint)</li>
                 <li>Power Apps (aplicativos personalizados)</li>
-                <li>Copilot M365 e Copilot Studio (integração com processos e automação inteligente)</li>
+                <li>Copilot M365 e Copilot Studio (IA aplicada a processos)</li>
                 <li>Agentes de IA para suporte e automação de tarefas</li>
                 <li>Dataverse, SharePoint</li>
                 <li>Excel Avançado</li>
@@ -66,9 +84,12 @@
 
     </main>
 
+    <!-- Rodapé com direitos autorais -->
     <footer class="site-footer">
         <p>© 2025 Guilherme Henrique — Portfólio</p>
     </footer>
+
+    <!-- Script principal (tema e formulário) -->
     <script src="script.js"></script>
 </body>
 

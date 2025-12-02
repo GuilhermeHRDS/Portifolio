@@ -1,22 +1,24 @@
-/* Verde Moderno Suave - style.css */
+/* Tema visual verde moderno - estilos gerais */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* controla como larguras são calculadas */
     margin: 0;
     padding: 0;
 }
 
+/* Variáveis de cores e sombras do tema claro */
 :root {
-    --bg: #f6fbf9;
-    --card: #ffffff;
-    --text: #20332b;
-    --muted: #5b6b63;
-    --accent: #2fa77a;
-    --accent-2: #91d6b6;
-    --glass: rgba(47, 167, 122, 0.08);
-    --radius: 14px;
-    --shadow: 0 8px 24px rgba(34, 50, 40, 0.06);
+    --bg: #f6fbf9;          /* cor de fundo geral */
+    --card: #ffffff;        /* fundo dos cards */
+    --text: #20332b;        /* cor principal do texto */
+    --muted: #5b6b63;       /* texto secundário */
+    --accent: #2fa77a;      /* cor de destaque */
+    --accent-2: #91d6b6;    /* variação do destaque */
+    --glass: rgba(47, 167, 122, 0.08); /* efeito vidro/transparência */
+    --radius: 14px;         /* bordas arredondadas */
+    --shadow: 0 8px 24px rgba(34, 50, 40, 0.06); /* sombra suave */
 }
 
+/* Variáveis do tema escuro (ativado pelo JS) */
 [data-theme="dark"] {
     --bg: #071412;
     --card: #0b1f18;
@@ -29,22 +31,22 @@
 }
 
 body {
-    font-family: Inter, "Segoe UI", Roboto, Arial;
-    background: var(--bg);
-    color: var(--text);
+    font-family: Inter, "Segoe UI", Roboto, Arial; /* fontes padrão */
+    background: var(--bg); /* fundo baseado no tema */
+    color: var(--text);    /* cor do texto */
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    padding-top: 100px;
+    padding-top: 100px;   /* espaço para o header fixo */
 }
 
-/* HEADER FIXO */
+/* HEADER FIXO - barra superior */
 .site-header {
     background: var(--bg);
     padding: 12px 0;
-    position: fixed;
+    position: fixed;  /* sempre visível no topo */
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 999;     /* fica acima do conteúdo */
 }
 
 .header-inner {
@@ -57,6 +59,7 @@ body {
     justify-content: space-between;
 }
 
+/* Área com avatar + nome */
 .logo-area {
     display: flex;
     align-items: center;
@@ -74,9 +77,10 @@ body {
 .logo-text {
     font-weight: 700;
     font-size: 1.25rem;
-    color: var(--accent);
+    color: var(--accent); /* destaque */
 }
 
+/* NAV - menu */
 .nav {
     display: flex;
     gap: 10px;
@@ -91,11 +95,12 @@ body {
 }
 
 .nav a.active {
-    background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    background: linear-gradient(90deg, var(--accent-2), var(--accent)); /* botão destacado */
     color: white;
     box-shadow: 0 6px 18px rgba(47, 167, 122, 0.14);
 }
 
+/* Botão de alternar tema */
 .controls {
     display: flex;
     gap: 8px;
@@ -109,13 +114,14 @@ body {
     cursor: pointer;
 }
 
-/* PÁGINA SOBRE */
+/* CONTAINER GERAL DAS PÁGINAS */
 .container {
-    max-width: 1100px;
+    max-width: 1100px; /* centraliza e limita largura */
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Seção principal da página Sobre */
 .hero {
     display: flex;
     justify-content: center;
@@ -130,7 +136,7 @@ body {
     box-shadow: var(--shadow);
 }
 
-
+/* Foto de perfil da página Sobre */
 .profile-pic {
     width: 160px;
     height: 160px;
@@ -145,9 +151,7 @@ body {
     object-fit: cover;
 }
 
-
-
-/* CARDS */
+/* CARDS - blocos com fundo branco */
 .card {
     background: var(--card);
     padding: 20px;
@@ -156,6 +160,7 @@ body {
     margin-top: 20px;
 }
 
+/* Lista de informações */
 .info-list {
     list-style: none;
     margin-top: 10px;
@@ -166,23 +171,24 @@ body {
     color: var(--muted);
 }
 
-/* PORTFÓLIO */
+/* PORTFÓLIO - grade de imagens */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
     gap: 16px;
 }
 
+/* Card do projeto */
 .project {
     border-radius: 12px;
     overflow: hidden;
     background: var(--card);
     box-shadow: var(--shadow);
-    transition: 0.3s;
+    transition: 0.3s; /* animação hover */
 }
 
 .project:hover {
-    transform: translateY(-6px);
+    transform: translateY(-6px); /* efeito flutuar */
     box-shadow: 0 18px 40px rgba(32, 51, 43, 0.12);
 }
 
@@ -192,7 +198,7 @@ body {
     object-fit: cover;
 }
 
-/* FORMULÁRIO */
+/* FORMULÁRIO - inputs e textarea */
 input,
 textarea {
     width: 100%;
@@ -202,6 +208,7 @@ textarea {
     margin-top: 6px;
 }
 
+/* Botão do formulário */
 .btn {
     background: var(--accent);
     color: white;
@@ -213,7 +220,7 @@ textarea {
     font-weight: 600;
 }
 
-/* FOOTER */
+/* RODAPÉ */
 .site-footer {
     text-align: center;
     padding: 20px;
@@ -221,10 +228,10 @@ textarea {
     color: var(--muted);
 }
 
-/* RESPONSIVO */
+/* RESPONSIVIDADE PARA CELULAR */
 @media(max-width:800px) {
     .gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* muda para 1 coluna */
     }
 
     .hero {
@@ -232,6 +239,6 @@ textarea {
     }
 
     body {
-        padding-top: 140px;
+        padding-top: 140px; /* ajusta espaço para o header */
     }
 }
