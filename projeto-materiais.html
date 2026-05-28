@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Projeto — Visão de Materiais | Guilherme Henrique</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho fixo -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <div class="logo-area">
+                <img src="imagem/Guilherme.jpeg" class="avatar-mini" alt="Foto de Guilherme Henrique">
+                <span class="logo-text">Guilherme Henrique Rodrigues da Silva</span>
+            </div>
+
+            <nav class="nav" role="navigation" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="portfolio.html" class="active">Portfólio</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+
+        <section class="card">
+
+            <!-- TÍTULO CENTRALIZADO -->
+            <h2 style="text-align: center;">Visão de Materiais</h2>
+
+            <!-- DESCRIÇÃO -->
+            <section class="card description">
+                <p>
+                    Este dashboard de Visão de Materiais foi desenvolvido no Power BI com foco no
+                    controle e na gestão estratégica de estoques móveis e almoxarifados. A solução
+                    permite acompanhar de forma clara e interativa todo o fluxo de materiais,
+                    desde a entrada até o atendimento das requisições, apoiando decisões operacionais
+                    e financeiras.
+                </p>
+
+                <p>
+                    O painel apresenta análises detalhadas de entradas e saídas de materiais por
+                    almoxarifado, possibilitando o acompanhamento do saldo atual, do giro de estoque
+                    e do inventário consolidado. Essas informações auxiliam na prevenção de rupturas,
+                    no controle de excessos e na melhoria do planejamento de suprimentos.
+                </p>
+
+                <p>
+                    A análise de custos é outro ponto central do dashboard, permitindo visualizar
+                    valores unitários e totais dos materiais por centro de custo e por local de
+                    armazenamento. Essa abordagem facilita a identificação de desperdícios,
+                    otimização de recursos e maior transparência financeira.
+                </p>
+
+                <p>
+                    O relatório também evidencia a eficiência no atendimento das requisições,
+                    comparando quantidades solicitadas versus quantidades efetivamente atendidas,
+                    além de destacar variações entre o estoque previsto e o estoque real. Dessa forma,
+                    é possível identificar desvios operacionais e oportunidades de melhoria nos
+                    processos logísticos.
+                </p>
+
+                <p>
+                    De maneira geral, o dashboard oferece uma visão integrada e confiável da gestão
+                    de materiais, contribuindo para maior controle operacional, redução de custos
+                    e apoio à tomada de decisões estratégicas.
+                </p>
+            </section>
+
+            <!-- POWER BI -->
+            <div class="powerbi-embed">
+                <iframe
+                    title="Painel Estoque Móvel"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiNjFmMDc0MzYtZDY1My00ZWU2LTlhMjgtNmViMmFhNjliN2ZjIiwidCI6ImMyNmEyZTA1LTI2ZDItNDBhNS04OTA0LWY4OTIyNGRkMjVhYSJ9"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <section class="card project-interaction">
+                <div class="interaction-bar">
+                    <button id="like-button" class="btn">
+                        👍 Curtir <span id="like-count">0</span>
+                    </button>
+                    <div class="interaction-meta">
+                        <p class="like-note">Curtir e comentar ficam salvos no seu navegador.</p>
+                    </div>
+                </div>
+
+                <div class="comment-section">
+                    <h3>Comentários</h3>
+                    <p class="section-subtitle">Compartilhe uma opinião rápida sobre este projeto.</p>
+
+                    <div id="comment-list" class="comment-list">
+                        <p class="comment-empty">Seja o primeiro a comentar.</p>
+                    </div>
+
+                    <form id="project-comment-form" class="comment-form">
+                        <div class="form-group">
+                            <label for="comment-name">Seu nome</label>
+                            <input type="text" id="comment-name" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-text">Comentário</label>
+                            <textarea id="comment-text" placeholder="Deixe um comentário" required></textarea>
+                        </div>
+                        <button type="submit">Enviar comentário</button>
+                    </form>
+                </div>
+            </section>
+
+            <a href="portfolio.html" class="btn-ghost">← Voltar ao Portfólio</a>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <p>© 2025 Guilherme Henrique — Portfólio</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

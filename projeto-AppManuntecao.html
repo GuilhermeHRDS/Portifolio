@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Projeto — Power Apps | Guilherme Henrique</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <img src="imagem/Guilherme.jpeg" class="avatar-mini" alt="Foto de Guilherme Henrique">
+                <span class="logo-text">Guilherme Henrique</span>
+            </div>
+
+            <nav class="nav" role="navigation" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="portfolio.html" class="active">Portfólio</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2 class="section-title">App de Manutenção de Equipamentos</h2>
+            <p class="section-subtitle">Solução Power Apps para registro, acompanhamento e execução mais eficiente de manutenções.</p>
+
+            <div class="description">
+                <p>O aplicativo foi desenvolvido em Power Apps para digitalizar ordens de serviço, inspeções e informações de ativos, trazendo segurança e padronização ao processo.</p>
+                <p>A solução permite registrar solicitações em campo, consultar histórico de manutenção e acompanhar o status das ações de forma centralizada.</p>
+                <p>A integração com o ecossistema Microsoft garante que informações sejam compartilhadas com segurança entre Power Apps, SharePoint e Power BI.</p>
+                <p>Assim, a equipe de manutenção conta com visibilidade operacional e relatórios mais confiáveis, reduzindo o uso de planilhas e retrabalho.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <strong>Digitalização</strong>
+                    <span>Substituição de controles manuais por registro estruturado em app.</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Mobilidade</strong>
+                    <span>Uso em dispositivos móveis e desktop para equipes em campo.</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Controle</strong>
+                    <span>Visão clara do ciclo de manutenção e das ações concluídas.</span>
+                </div>
+            </div>
+
+            <div class="powerbi-embed">
+                <iframe src="https://apps.powerapps.com/play/e/default-37b4cc30-3315-4598-89e5-e6190a702bc0/a/4bc30d8b-cfe2-4c67-8153-a06790ec1d82?tenantId=37b4cc30-3315-4598-89e5-e6190a702bc0&hint=e028872b-fd95-43c7-aa8d-c7d38d1eaaba&source=embed" allowfullscreen frameborder="0"></iframe>
+            </div>
+
+            <section class="card project-interaction">
+                <div class="interaction-bar">
+                    <button id="like-button" class="btn">
+                        👍 Curtir <span id="like-count">0</span>
+                    </button>
+                    <div class="interaction-meta">
+                        <p class="like-note">Curtir e comentar ficam salvos no seu navegador.</p>
+                    </div>
+                </div>
+
+                <div class="comment-section">
+                    <h3>Comentários</h3>
+                    <p class="section-subtitle">Compartilhe uma opinião rápida sobre este projeto.</p>
+
+                    <div id="comment-list" class="comment-list">
+                        <p class="comment-empty">Seja o primeiro a comentar.</p>
+                    </div>
+
+                    <form id="project-comment-form" class="comment-form">
+                        <div class="form-group">
+                            <label for="comment-name">Seu nome</label>
+                            <input type="text" id="comment-name" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-text">Comentário</label>
+                            <textarea id="comment-text" placeholder="Deixe um comentário" required></textarea>
+                        </div>
+                        <button type="submit">Enviar comentário</button>
+                    </form>
+                </div>
+            </section>
+
+            <a href="portfolio.html" class="btn-ghost">← Voltar ao Portfólio</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Guilherme Henrique — Portfólio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

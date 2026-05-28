@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Contato — Guilherme Henrique</title>
+
+    <!-- Importa o arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho fixo com foto, nome e menu -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <!-- Área com avatar e nome -->
+            <div class="logo-area">
+                <img src="imagem/Guilherme.jpeg" class="avatar-mini" alt="Foto de Guilherme Henrique">
+                <span class="logo-text">Guilherme Henrique</span>
+            </div>
+
+            <!-- Menu principal; link Contato marcado como ativo -->
+            <nav class="nav" role="navigation" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="contato.html" class="active">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+        <section class="card section">
+            <h2 class="section-title">Contato profissional</h2>
+            <p class="section-subtitle">Canais para conexão profissional e troca de informações sobre BI e Power Platform.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>WhatsApp</h3>
+                    <p>Canal para contato profissional e esclarecimento de dúvidas sobre minha experiência.</p>
+                    <a href="https://wa.me/5519971192499" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a>
+                </div>
+                <div class="contact-card">
+                    <h3>LinkedIn</h3>
+                    <p>Conexão profissional para troca de referências e apresentação de portfólio.</p>
+                    <a href="https://www.linkedin.com/in/guilherme-henrique-rodrigues-da-silva-934833b6/" target="_blank" rel="noopener noreferrer">Visitar LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="card section">
+            <h3 class="section-title">E-mail</h3>
+            <p class="section-subtitle">Envie sua solicitação por e-mail, com todos os detalhes do projeto.</p>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input id="name" name="name" type="text" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Descreva sua necessidade" required></textarea>
+                </div>
+                <div style="display:flex; flex-wrap:wrap; gap:16px; margin-top:20px;">
+                    <button class="btn" type="submit">Enviar mensagem</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé com direitos autorais -->
+    <footer class="site-footer">
+        <p>© 2025 Guilherme Henrique — Portfólio</p>
+    </footer>
+
+    <!-- EMAILJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("DEFTRI5_YmgPlh1Em");
+        })();
+    </script>
+
+
+    <!-- Script principal (tema + mensagem de confirmação do formulário) -->
+    <script src="script.js"></script>
+</body>
+
+</html>

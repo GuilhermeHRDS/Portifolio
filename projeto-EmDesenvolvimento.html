@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Projeto em Desenvolvimento | Guilherme Henrique</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER PADRÃO -->
+<header class="site-header">
+    <div class="container header-inner">
+
+        <div class="logo-area">
+            <img src="imagem/Guilherme.jpeg" class="avatar-mini" alt="Foto de Guilherme Henrique">
+            <span class="logo-text">Guilherme Henrique Rodrigues da Silva</span>
+        </div>
+
+        <nav class="nav" role="navigation" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="portfolio.html" class="active">Portfólio</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+    </div>
+</header>
+
+<!-- CONTEÚDO -->
+<main class="container">
+
+    <section class="card project-header" style="text-align: center;">
+        <h2 class="project-title">🚧 Projeto em Desenvolvimento</h2>
+
+        <p class="subtitle">
+            Esta solução está atualmente em fase de desenvolvimento e aprimoramento.
+        </p>
+    </section>
+
+    <section class="card description">
+        <p>
+            Este projeto faz parte do meu portfólio profissional e está sendo desenvolvido
+            com foco em boas práticas de análise de dados, automação de processos e usabilidade.
+        </p>
+
+        <p>
+            Em breve, esta página contará com dashboards interativos, indicadores estratégicos
+            e uma solução completa utilizando ferramentas da Power Platform.
+        </p>
+
+        <p>
+            Caso tenha interesse em conhecer mais detalhes sobre este projeto ou discutir
+            soluções semelhantes, fique à vontade para entrar em contato.
+        </p>
+    </section>
+
+    <section class="card project-interaction">
+        <div class="interaction-bar">
+            <button id="like-button" class="btn">
+                👍 Curtir <span id="like-count">0</span>
+            </button>
+            <div class="interaction-meta">
+                <p class="like-note">Curtir e comentar ficam salvos no seu navegador.</p>
+            </div>
+        </div>
+
+        <div class="comment-section">
+            <h3>Comentários</h3>
+            <p class="section-subtitle">Compartilhe uma opinião rápida sobre este projeto.</p>
+
+            <div id="comment-list" class="comment-list">
+                <p class="comment-empty">Seja o primeiro a comentar.</p>
+            </div>
+
+            <form id="project-comment-form" class="comment-form">
+                <div class="form-group">
+                    <label for="comment-name">Seu nome</label>
+                    <input type="text" id="comment-name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment-text">Comentário</label>
+                    <textarea id="comment-text" placeholder="Deixe um comentário" required></textarea>
+                </div>
+                <button type="submit">Enviar comentário</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="card" style="text-align: center;">
+        <a href="portfolio.html" class="btn-ghost">← Voltar ao Portfólio</a>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <p>© 2025 Guilherme Henrique — Portfólio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

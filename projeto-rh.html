@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Projeto — Dashboard de RH | Guilherme Henrique</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho fixo -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <div class="logo-area">
+                <img src="imagem/Guilherme.jpeg" class="avatar-mini" alt="Foto de Guilherme Henrique">
+                <span class="logo-text">Guilherme Henrique Rodrigues da Silva</span>
+            </div>
+
+            <nav class="nav" role="navigation" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="portfolio.html" class="active">Portfólio</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+
+        <section class="card">
+
+            <!-- TÍTULO CENTRALIZADO -->
+            <h2 style="text-align: center;">Dashboard de Recursos Humanos</h2>
+
+            <!-- DESCRIÇÃO -->
+            <section class="card description">
+                <p>
+                    Este dashboard de Recursos Humanos foi desenvolvido no Power BI com o objetivo
+                    de fornecer uma visão estratégica, clara e orientada a dados sobre a gestão de
+                    pessoas da organização. A solução permite acompanhar indicadores essenciais
+                    relacionados a contratações, desligamentos, rotatividade e distribuição do
+                    quadro de colaboradores.
+                </p>
+
+                <p>
+                    Entre os principais KPIs apresentados estão o total de contratações (234),
+                    colaboradores ativos (217), desligamentos (17) e a taxa de rotatividade de
+                    7,26%. Esses indicadores possibilitam uma leitura rápida da saúde organizacional
+                    e auxiliam no monitoramento da estabilidade e crescimento da equipe.
+                </p>
+
+                <p>
+                    O painel conta com visualizações intuitivas que facilitam a análise dos dados.
+                    Um gráfico de barras horizontais apresenta a distribuição dos funcionários
+                    ativos por cidade, permitindo identificar concentrações geográficas e apoiar
+                    decisões de expansão, mobilidade ou realocação de equipes.
+                </p>
+
+                <p>
+                    A análise de diversidade é representada por um gráfico de rosca que evidencia
+                    a divisão por gênero, com 47,93% de participação feminina e 52,07% masculina.
+                    Essa visualização contribui para avaliações de equilíbrio e suporte a políticas
+                    de diversidade e inclusão.
+                </p>
+
+                <p>
+                    Além disso, um diagrama de árvore (treemap) segmenta os colaboradores por área
+                    e cargo, destacando setores como Administrativo, Comercial, Operações,
+                    Logística e Financeiro, bem como suas respectivas funções. Essa abordagem
+                    facilita a compreensão da estrutura organizacional e da distribuição da força
+                    de trabalho.
+                </p>
+
+                <p>
+                    De forma geral, o dashboard oferece uma experiência interativa e dinâmica,
+                    permitindo análises rápidas, identificação de padrões e suporte à tomada de
+                    decisões estratégicas em gestão de pessoas.
+                </p>
+            </section>
+
+            <!-- POWER BI -->
+            <div class="powerbi-embed">
+                <iframe
+                    title="Painel RH"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiYTNlM2UwNTYtYjQxNy00YzA4LTlkYmItZTgzNDllZmJiYzU1IiwidCI6ImMyNmEyZTA1LTI2ZDItNDBhNS04OTA0LWY4OTIyNGRkMjVhYSJ9"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <section class="card project-interaction">
+                <div class="interaction-bar">
+                    <button id="like-button" class="btn">
+                        👍 Curtir <span id="like-count">0</span>
+                    </button>
+                    <div class="interaction-meta">
+                        <p class="like-note">Curtir e comentar ficam salvos no seu navegador.</p>
+                    </div>
+                </div>
+
+                <div class="comment-section">
+                    <h3>Comentários</h3>
+                    <p class="section-subtitle">Compartilhe uma opinião rápida sobre este projeto.</p>
+
+                    <div id="comment-list" class="comment-list">
+                        <p class="comment-empty">Seja o primeiro a comentar.</p>
+                    </div>
+
+                    <form id="project-comment-form" class="comment-form">
+                        <div class="form-group">
+                            <label for="comment-name">Seu nome</label>
+                            <input type="text" id="comment-name" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-text">Comentário</label>
+                            <textarea id="comment-text" placeholder="Deixe um comentário" required></textarea>
+                        </div>
+                        <button type="submit">Enviar comentário</button>
+                    </form>
+                </div>
+            </section>
+
+            <a href="portfolio.html" class="btn-ghost">← Voltar ao Portfólio</a>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <p>© 2025 Guilherme Henrique — Portfólio</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

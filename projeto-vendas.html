@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Projeto — Dashboard de Vendas | Guilherme Henrique</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho fixo -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <div class="logo-area">
+                <img src="imagem/Guilherme.jpeg" class="avatar-mini" alt="Foto de Guilherme Henrique">
+                <span class="logo-text">Guilherme Henrique Rodrigues da Silva</span>
+            </div>
+
+            <nav class="nav" role="navigation" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="portfolio.html" class="active">Portfólio</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+
+        <section class="card">
+
+            <!-- TÍTULO CENTRALIZADO -->
+            <h2 style="text-align: center;">Dashboard Corporativo de Vendas — Power BI</h2>
+
+            <!-- DESCRIÇÃO -->
+            <section class="card description">
+                <p>
+                    Este dashboard de vendas foi desenvolvido no Power BI com o objetivo de
+                    fornecer uma visão estratégica e consolidada do desempenho comercial,
+                    permitindo o acompanhamento de indicadores-chave de forma clara,
+                    interativa e orientada à tomada de decisão.
+                </p>
+
+                <p>
+                    A solução apresenta métricas essenciais como volume de vendas, lucro,
+                    margem percentual, preço médio e unidades vendidas, além de análises
+                    comparativas em relação ao mês anterior e metas estabelecidas,
+                    facilitando a identificação de tendências, variações e oportunidades
+                    de melhoria nos resultados.
+                </p>
+
+                <p>
+                    O painel conta com análises temporais de vendas por mês, segmentação
+                    por tipo de cliente e visualização geográfica por país, possibilitando
+                    compreender padrões de comportamento, sazonalidade e a distribuição
+                    regional das vendas.
+                </p>
+
+                <p>
+                    Foram aplicados conceitos de modelagem de dados, criação de medidas
+                    utilizando DAX e uso de segmentações dinâmicas, permitindo que os
+                    usuários filtrem as informações por ano, mês, país, produto e
+                    segmento de forma intuitiva.
+                </p>
+
+                <p>
+                    O design do dashboard foi desenvolvido com foco em gestores,
+                    executivos e equipes comerciais, priorizando clareza visual,
+                    padronização de indicadores, leitura rápida dos dados e destaque
+                    para métricas críticas de performance.
+                </p>
+
+                <p>
+                    De forma geral, o projeto demonstra a aplicação do Power BI como
+                    ferramenta estratégica de Business Intelligence, apoiando o
+                    acompanhamento de metas, a análise de desempenho comercial e a
+                    tomada de decisões baseadas em dados confiáveis.
+                </p>
+            </section>
+
+            <!-- POWER BI -->
+            <div class="powerbi-embed">
+                <iframe
+                    src="https://app.powerbi.com/view?r=eyJrIjoiNTAxZWZiN2QtMDQ2NC00ODNjLThhZDctYjM4OTVlMTFmMjJmIiwidCI6ImMyNmEyZTA1LTI2ZDItNDBhNS04OTA0LWY4OTIyNGRkMjVhYSJ9"
+                    allowfullscreen frameborder="0">
+                </iframe>
+            </div>
+
+            <section class="card project-interaction">
+                <div class="interaction-bar">
+                    <button id="like-button" class="btn">
+                        👍 Curtir <span id="like-count">0</span>
+                    </button>
+                    <div class="interaction-meta">
+                        <p class="like-note">Curtir e comentar ficam salvos no seu navegador.</p>
+                    </div>
+                </div>
+
+                <div class="comment-section">
+                    <h3>Comentários</h3>
+                    <p class="section-subtitle">Compartilhe uma opinião rápida sobre este projeto.</p>
+
+                    <div id="comment-list" class="comment-list">
+                        <p class="comment-empty">Seja o primeiro a comentar.</p>
+                    </div>
+
+                    <form id="project-comment-form" class="comment-form">
+                        <div class="form-group">
+                            <label for="comment-name">Seu nome</label>
+                            <input type="text" id="comment-name" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-text">Comentário</label>
+                            <textarea id="comment-text" placeholder="Deixe um comentário" required></textarea>
+                        </div>
+                        <button type="submit">Enviar comentário</button>
+                    </form>
+                </div>
+            </section>
+
+            <a href="portfolio.html" class="btn-ghost">← Voltar ao Portfólio</a>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <p>© 2025 Guilherme Henrique — Portfólio</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
